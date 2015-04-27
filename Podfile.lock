@@ -1,0 +1,42 @@
+PODS:
+  - CocoaLumberjack (2.0.0):
+    - CocoaLumberjack/Default (= 2.0.0)
+    - CocoaLumberjack/Extensions (= 2.0.0)
+  - CocoaLumberjack/Core (2.0.0)
+  - CocoaLumberjack/Default (2.0.0):
+    - CocoaLumberjack/Core
+  - CocoaLumberjack/Extensions (2.0.0):
+    - CocoaLumberjack/Default
+  - IMVCommon (0.0.1):
+    - CocoaLumberjack
+  - IMVTheme (0.0.1)
+  - SVProgressHUD (1.1.3)
+
+DEPENDENCIES:
+  - IMVCommon (from `https://github.com/inmovation/IMVCommon.git`, tag `0.0.1`)
+  - IMVTheme (from `https://github.com/inmovation/IMVTheme.git`, tag `0.0.1`)
+  - SVProgressHUD (~> 1.1.3)
+
+EXTERNAL SOURCES:
+  IMVCommon:
+    :git: https://github.com/inmovation/IMVCommon.git
+    :tag: 0.0.1
+  IMVTheme:
+    :git: https://github.com/inmovation/IMVTheme.git
+    :tag: 0.0.1
+
+CHECKOUT OPTIONS:
+  IMVCommon:
+    :git: https://github.com/inmovation/IMVCommon.git
+    :tag: 0.0.1
+  IMVTheme:
+    :git: https://github.com/inmovation/IMVTheme.git
+    :tag: 0.0.1
+
+SPEC CHECKSUMS:
+  CocoaLumberjack: a6f77d987d65dc7ba86b0f84db7d0b9084f77bcb
+  IMVCommon: 612fb13e2247158be73115d1a1b5e8fc5a6893cd
+  IMVTheme: 32a798446842b7c21651928049022d4d6eae82bb
+  SVProgressHUD: 748080e4f36e603f6c02aec292664239df5279c1
+
+COCOAPODS: 0.35.0

@@ -1,0 +1,1 @@
+../../../IMVCommon/IMVCommon/lib/Controller/Template/IMVTemplateViewController+Hints.h

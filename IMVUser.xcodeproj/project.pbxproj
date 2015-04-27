@@ -1,0 +1,508 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		36338BEE1AEDC55B00751A61 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 36338BED1AEDC55B00751A61 /* main.m */; };
+		36338BF11AEDC55B00751A61 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 36338BF01AEDC55B00751A61 /* AppDelegate.m */; };
+		36338BF41AEDC55B00751A61 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36338BF31AEDC55B00751A61 /* ViewController.m */; };
+		36338BF71AEDC55B00751A61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36338BF51AEDC55B00751A61 /* Main.storyboard */; };
+		36338BF91AEDC55B00751A61 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36338BF81AEDC55B00751A61 /* Images.xcassets */; };
+		36338BFC1AEDC55B00751A61 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36338BFA1AEDC55B00751A61 /* LaunchScreen.xib */; };
+		36338C081AEDC55B00751A61 /* IMVUserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 36338C071AEDC55B00751A61 /* IMVUserTests.m */; };
+		36338C141AEDCD9500751A61 /* IMVLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36338C121AEDCD9500751A61 /* IMVLoginViewController.m */; };
+		36338C151AEDCD9500751A61 /* IMVLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36338C131AEDCD9500751A61 /* IMVLoginViewController.xib */; };
+		36338C221AEDF19A00751A61 /* ThemeDefault.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 36338C211AEDF19A00751A61 /* ThemeDefault.bundle */; };
+		893A354BBB423A2EBCAE58CE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BFCC55A519FEB1810A2FBDA /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		36338C021AEDC55B00751A61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 36338BE01AEDC55B00751A61 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 36338BE71AEDC55B00751A61;
+			remoteInfo = IMVUser;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		36338BE81AEDC55B00751A61 /* IMVUser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IMVUser.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		36338BEC1AEDC55B00751A61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36338BED1AEDC55B00751A61 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		36338BEF1AEDC55B00751A61 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		36338BF01AEDC55B00751A61 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		36338BF21AEDC55B00751A61 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		36338BF31AEDC55B00751A61 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		36338BF61AEDC55B00751A61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		36338BF81AEDC55B00751A61 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		36338BFB1AEDC55B00751A61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		36338C011AEDC55B00751A61 /* IMVUserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IMVUserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		36338C061AEDC55B00751A61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36338C071AEDC55B00751A61 /* IMVUserTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IMVUserTests.m; sourceTree = "<group>"; };
+		36338C111AEDCD9500751A61 /* IMVLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMVLoginViewController.h; sourceTree = "<group>"; };
+		36338C121AEDCD9500751A61 /* IMVLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMVLoginViewController.m; sourceTree = "<group>"; };
+		36338C131AEDCD9500751A61 /* IMVLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IMVLoginViewController.xib; sourceTree = "<group>"; };
+		36338C211AEDF19A00751A61 /* ThemeDefault.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ThemeDefault.bundle; sourceTree = "<group>"; };
+		54B44F8A1D7CA3A89E45A1BC /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		8BFCC55A519FEB1810A2FBDA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		939A03D110B1749ACA51EB3B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		36338BE51AEDC55B00751A61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				893A354BBB423A2EBCAE58CE /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36338BFE1AEDC55B00751A61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02DA3D400B4C73A5140C5929 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				939A03D110B1749ACA51EB3B /* Pods.debug.xcconfig */,
+				54B44F8A1D7CA3A89E45A1BC /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		36338BDF1AEDC55B00751A61 = {
+			isa = PBXGroup;
+			children = (
+				36338BEA1AEDC55B00751A61 /* IMVUser */,
+				36338C041AEDC55B00751A61 /* IMVUserTests */,
+				36338BE91AEDC55B00751A61 /* Products */,
+				02DA3D400B4C73A5140C5929 /* Pods */,
+				DD18E2BB55851B942B28B164 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		36338BE91AEDC55B00751A61 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				36338BE81AEDC55B00751A61 /* IMVUser.app */,
+				36338C011AEDC55B00751A61 /* IMVUserTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		36338BEA1AEDC55B00751A61 /* IMVUser */ = {
+			isa = PBXGroup;
+			children = (
+				36338BEF1AEDC55B00751A61 /* AppDelegate.h */,
+				36338BF01AEDC55B00751A61 /* AppDelegate.m */,
+				36338BF21AEDC55B00751A61 /* ViewController.h */,
+				36338BF31AEDC55B00751A61 /* ViewController.m */,
+				36338C111AEDCD9500751A61 /* IMVLoginViewController.h */,
+				36338C121AEDCD9500751A61 /* IMVLoginViewController.m */,
+				36338C131AEDCD9500751A61 /* IMVLoginViewController.xib */,
+				36338BF51AEDC55B00751A61 /* Main.storyboard */,
+				36338C211AEDF19A00751A61 /* ThemeDefault.bundle */,
+				36338BF81AEDC55B00751A61 /* Images.xcassets */,
+				36338BFA1AEDC55B00751A61 /* LaunchScreen.xib */,
+				36338BEB1AEDC55B00751A61 /* Supporting Files */,
+			);
+			path = IMVUser;
+			sourceTree = "<group>";
+		};
+		36338BEB1AEDC55B00751A61 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				36338BEC1AEDC55B00751A61 /* Info.plist */,
+				36338BED1AEDC55B00751A61 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		36338C041AEDC55B00751A61 /* IMVUserTests */ = {
+			isa = PBXGroup;
+			children = (
+				36338C071AEDC55B00751A61 /* IMVUserTests.m */,
+				36338C051AEDC55B00751A61 /* Supporting Files */,
+			);
+			path = IMVUserTests;
+			sourceTree = "<group>";
+		};
+		36338C051AEDC55B00751A61 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				36338C061AEDC55B00751A61 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DD18E2BB55851B942B28B164 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8BFCC55A519FEB1810A2FBDA /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		36338BE71AEDC55B00751A61 /* IMVUser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36338C0B1AEDC55B00751A61 /* Build configuration list for PBXNativeTarget "IMVUser" */;
+			buildPhases = (
+				96498468638A2E7243C135FE /* Check Pods Manifest.lock */,
+				36338BE41AEDC55B00751A61 /* Sources */,
+				36338BE51AEDC55B00751A61 /* Frameworks */,
+				36338BE61AEDC55B00751A61 /* Resources */,
+				039A88E5581F3BAECD5BC843 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IMVUser;
+			productName = IMVUser;
+			productReference = 36338BE81AEDC55B00751A61 /* IMVUser.app */;
+			productType = "com.apple.product-type.application";
+		};
+		36338C001AEDC55B00751A61 /* IMVUserTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36338C0E1AEDC55B00751A61 /* Build configuration list for PBXNativeTarget "IMVUserTests" */;
+			buildPhases = (
+				36338BFD1AEDC55B00751A61 /* Sources */,
+				36338BFE1AEDC55B00751A61 /* Frameworks */,
+				36338BFF1AEDC55B00751A61 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				36338C031AEDC55B00751A61 /* PBXTargetDependency */,
+			);
+			name = IMVUserTests;
+			productName = IMVUserTests;
+			productReference = 36338C011AEDC55B00751A61 /* IMVUserTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		36338BE01AEDC55B00751A61 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = inmovation;
+				TargetAttributes = {
+					36338BE71AEDC55B00751A61 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					36338C001AEDC55B00751A61 = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = 36338BE71AEDC55B00751A61;
+					};
+				};
+			};
+			buildConfigurationList = 36338BE31AEDC55B00751A61 /* Build configuration list for PBXProject "IMVUser" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 36338BDF1AEDC55B00751A61;
+			productRefGroup = 36338BE91AEDC55B00751A61 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				36338BE71AEDC55B00751A61 /* IMVUser */,
+				36338C001AEDC55B00751A61 /* IMVUserTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		36338BE61AEDC55B00751A61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36338BF71AEDC55B00751A61 /* Main.storyboard in Resources */,
+				36338BFC1AEDC55B00751A61 /* LaunchScreen.xib in Resources */,
+				36338BF91AEDC55B00751A61 /* Images.xcassets in Resources */,
+				36338C221AEDF19A00751A61 /* ThemeDefault.bundle in Resources */,
+				36338C151AEDCD9500751A61 /* IMVLoginViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36338BFF1AEDC55B00751A61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		039A88E5581F3BAECD5BC843 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		96498468638A2E7243C135FE /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		36338BE41AEDC55B00751A61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36338BF41AEDC55B00751A61 /* ViewController.m in Sources */,
+				36338BF11AEDC55B00751A61 /* AppDelegate.m in Sources */,
+				36338BEE1AEDC55B00751A61 /* main.m in Sources */,
+				36338C141AEDCD9500751A61 /* IMVLoginViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36338BFD1AEDC55B00751A61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36338C081AEDC55B00751A61 /* IMVUserTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		36338C031AEDC55B00751A61 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 36338BE71AEDC55B00751A61 /* IMVUser */;
+			targetProxy = 36338C021AEDC55B00751A61 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		36338BF51AEDC55B00751A61 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				36338BF61AEDC55B00751A61 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		36338BFA1AEDC55B00751A61 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				36338BFB1AEDC55B00751A61 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		36338C091AEDC55B00751A61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		36338C0A1AEDC55B00751A61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		36338C0C1AEDC55B00751A61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 939A03D110B1749ACA51EB3B /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = IMVUser/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		36338C0D1AEDC55B00751A61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54B44F8A1D7CA3A89E45A1BC /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = IMVUser/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		36338C0F1AEDC55B00751A61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = IMVUserTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IMVUser.app/IMVUser";
+			};
+			name = Debug;
+		};
+		36338C101AEDC55B00751A61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = IMVUserTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IMVUser.app/IMVUser";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		36338BE31AEDC55B00751A61 /* Build configuration list for PBXProject "IMVUser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36338C091AEDC55B00751A61 /* Debug */,
+				36338C0A1AEDC55B00751A61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36338C0B1AEDC55B00751A61 /* Build configuration list for PBXNativeTarget "IMVUser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36338C0C1AEDC55B00751A61 /* Debug */,
+				36338C0D1AEDC55B00751A61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36338C0E1AEDC55B00751A61 /* Build configuration list for PBXNativeTarget "IMVUserTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36338C0F1AEDC55B00751A61 /* Debug */,
+				36338C101AEDC55B00751A61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 36338BE01AEDC55B00751A61 /* Project object */;
+}
