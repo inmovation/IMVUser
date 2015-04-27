@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IMVLoginViewController">
             <connections>
                 <outlet property="autoLoginButton" destination="apP-m2-pRy" id="ny2-Up-m0E"/>
+                <outlet property="autoLoginLabel" destination="OBS-VH-iel" id="5Tz-5B-2zd"/>
                 <outlet property="backgroundImageView" destination="MVP-i0-wYi" id="nFL-MN-pQI"/>
                 <outlet property="bodyView" destination="Ofd-T7-Sgb" id="GA8-J7-k1I"/>
                 <outlet property="bodyViewTopConstraint" destination="WXK-WP-24D" id="Tgp-EY-rD5"/>
@@ -14,8 +16,12 @@
                 <outlet property="leftConstraint" destination="m86-ky-UCN" id="Cqg-3K-MVM"/>
                 <outlet property="loginButton" destination="H9P-QB-pjz" id="6qA-Ci-CJ6"/>
                 <outlet property="loginButtonLeftConstraint" destination="LJ1-bz-1zE" id="RdQ-3I-zns"/>
+                <outlet property="loginButtonTopConstraint" destination="IQa-jX-Oim" id="PME-MI-6zc"/>
                 <outlet property="passwordImageView" destination="gZg-Zl-19T" id="kcW-vX-8s2"/>
                 <outlet property="passwordTextField" destination="z4a-9a-wcJ" id="gKk-NL-TSB"/>
+                <outlet property="rememberPswMarginConstraint" destination="WDT-zA-xK3" id="nNi-cG-DvM"/>
+                <outlet property="savePassButton" destination="6ii-AO-e7j" id="2nQ-MI-v2u"/>
+                <outlet property="savePassLabel" destination="iBp-t4-Y0Y" id="Lb0-8q-T9f"/>
                 <outlet property="titleLabel" destination="B2n-9d-kyw" id="CD4-e7-BcF"/>
                 <outlet property="titleLabelTopConstraint" destination="9lh-oG-rMD" id="s6a-fe-gAp"/>
                 <outlet property="userImageView" destination="OLe-K3-6fv" id="8zp-Gb-IHq"/>
@@ -38,7 +44,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ofd-T7-Sgb">
-                    <rect key="frame" x="0.0" y="120" width="320" height="197"/>
+                    <rect key="frame" x="0.0" y="120" width="320" height="198"/>
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_icon_user.png" translatesAutoresizingMaskIntoConstraints="NO" id="OLe-K3-6fv">
                             <rect key="frame" x="50" y="20" width="25" height="25"/>
@@ -85,7 +91,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H9P-QB-pjz">
-                            <rect key="frame" x="20" y="157" width="280" height="40"/>
+                            <rect key="frame" x="20" y="158" width="280" height="40"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="40" id="bgo-ie-buy"/>
                             </constraints>
@@ -96,17 +102,41 @@
                                 <action selector="loginButtonClicked:" destination="-1" eventType="touchUpInside" id="D7O-B0-rdd"/>
                             </connections>
                         </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ii-AO-e7j">
+                            <rect key="frame" x="175" y="120" width="25" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="HzQ-Rb-oWv"/>
+                                <constraint firstAttribute="width" constant="25" id="p5o-lj-DM6"/>
+                            </constraints>
+                            <state key="normal">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" backgroundImage="login_btn_checkin@2x"/>
+                            <connections>
+                                <action selector="savePassBtnClicked:" destination="-1" eventType="touchUpInside" id="7AA-XB-rUZ"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="保存密码" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iBp-t4-Y0Y">
+                            <rect key="frame" x="220" y="124" width="60" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                     </subviews>
                     <constraints>
                         <constraint firstItem="apP-m2-pRy" firstAttribute="leading" secondItem="OLe-K3-6fv" secondAttribute="leading" id="0Vr-Tj-Jpc"/>
-                        <constraint firstItem="H9P-QB-pjz" firstAttribute="top" secondItem="OBS-VH-iel" secondAttribute="bottom" constant="15" id="6LV-BU-9bd"/>
+                        <constraint firstItem="apP-m2-pRy" firstAttribute="centerY" secondItem="iBp-t4-Y0Y" secondAttribute="centerY" id="4bt-QQ-vai"/>
                         <constraint firstItem="z2W-Ex-SBc" firstAttribute="centerY" secondItem="OLe-K3-6fv" secondAttribute="centerY" id="8QX-Zm-2SB"/>
                         <constraint firstItem="z2W-Ex-SBc" firstAttribute="width" secondItem="z4a-9a-wcJ" secondAttribute="width" id="9Jn-E1-VIV"/>
+                        <constraint firstItem="apP-m2-pRy" firstAttribute="centerY" secondItem="6ii-AO-e7j" secondAttribute="centerY" id="9WE-vF-wcX"/>
                         <constraint firstItem="gZg-Zl-19T" firstAttribute="leading" secondItem="OLe-K3-6fv" secondAttribute="leading" id="Cxy-Tt-VDt"/>
                         <constraint firstItem="gZg-Zl-19T" firstAttribute="centerY" secondItem="z4a-9a-wcJ" secondAttribute="centerY" id="GYx-PU-MCC"/>
+                        <constraint firstItem="H9P-QB-pjz" firstAttribute="top" secondItem="z4a-9a-wcJ" secondAttribute="bottom" constant="60" id="IQa-jX-Oim"/>
                         <constraint firstItem="H9P-QB-pjz" firstAttribute="leading" secondItem="Ofd-T7-Sgb" secondAttribute="leading" constant="20" id="LJ1-bz-1zE"/>
                         <constraint firstItem="apP-m2-pRy" firstAttribute="top" secondItem="gZg-Zl-19T" secondAttribute="bottom" constant="25" id="Mzg-Aa-Lfe"/>
+                        <constraint firstItem="6ii-AO-e7j" firstAttribute="leading" secondItem="OBS-VH-iel" secondAttribute="trailing" constant="20" id="OAy-du-2bY"/>
                         <constraint firstItem="z2W-Ex-SBc" firstAttribute="leading" secondItem="OBS-VH-iel" secondAttribute="leading" id="UMW-tY-1Mm"/>
+                        <constraint firstItem="iBp-t4-Y0Y" firstAttribute="leading" secondItem="6ii-AO-e7j" secondAttribute="trailing" constant="20" id="WDT-zA-xK3"/>
                         <constraint firstItem="gZg-Zl-19T" firstAttribute="top" secondItem="OLe-K3-6fv" secondAttribute="bottom" constant="25" id="X5h-3B-KxL"/>
                         <constraint firstItem="z2W-Ex-SBc" firstAttribute="leading" secondItem="OLe-K3-6fv" secondAttribute="trailing" constant="20" id="ZCf-c9-BdX"/>
                         <constraint firstItem="z2W-Ex-SBc" firstAttribute="leading" secondItem="z4a-9a-wcJ" secondAttribute="leading" id="dzt-Fd-xs8"/>
@@ -116,22 +146,23 @@
                         <constraint firstAttribute="trailing" secondItem="z2W-Ex-SBc" secondAttribute="trailing" constant="40" id="iFI-VY-g9C"/>
                         <constraint firstItem="OLe-K3-6fv" firstAttribute="leading" secondItem="Ofd-T7-Sgb" secondAttribute="leading" constant="50" id="m86-ky-UCN"/>
                         <constraint firstItem="OLe-K3-6fv" firstAttribute="top" secondItem="Ofd-T7-Sgb" secondAttribute="top" constant="20" id="n6J-Bj-xfs"/>
+                        <constraint firstItem="6ii-AO-e7j" firstAttribute="leading" secondItem="OBS-VH-iel" secondAttribute="trailing" constant="20" id="qNZ-fZ-eGq"/>
                     </constraints>
                 </view>
                 <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="30" maxValue="70" translatesAutoresizingMaskIntoConstraints="NO" id="cJX-4S-3Oi">
-                    <rect key="frame" x="15" y="325" width="291" height="31"/>
+                    <rect key="frame" x="15" y="326" width="291" height="31"/>
                     <connections>
                         <action selector="slide1:" destination="-1" eventType="valueChanged" id="OyD-MH-yDd"/>
                     </connections>
                 </slider>
                 <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="20" minValue="10" maxValue="30" translatesAutoresizingMaskIntoConstraints="NO" id="XEm-5R-jxY">
-                    <rect key="frame" x="15" y="363" width="291" height="31"/>
+                    <rect key="frame" x="15" y="364" width="291" height="31"/>
                     <connections>
                         <action selector="slide2:" destination="-1" eventType="valueChanged" id="fXV-CS-Upb"/>
                     </connections>
                 </slider>
                 <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="20" minValue="10" maxValue="30" translatesAutoresizingMaskIntoConstraints="NO" id="aa8-vx-x8m">
-                    <rect key="frame" x="15" y="402" width="291" height="31"/>
+                    <rect key="frame" x="15" y="403" width="291" height="31"/>
                     <connections>
                         <action selector="slide3:" destination="-1" eventType="valueChanged" id="tg8-js-8qh"/>
                     </connections>

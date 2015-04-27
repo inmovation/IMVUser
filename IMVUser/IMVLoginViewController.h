@@ -10,7 +10,13 @@
 
 
 @interface IMVLoginViewController : UIViewController
+
+//action
 @property (strong, nonatomic) BOOL(^loginHandler)(NSString *userName, NSString *password);
+
+@property (assign, nonatomic) BOOL showRememberPsw;
+
+@property (assign, nonatomic) BOOL showAutoLogin;
 
 
 //style

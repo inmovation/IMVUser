@@ -27,6 +27,8 @@
     loginVC.loginButtonColor = [UIColor greenColor];
     loginVC.loginButtonCornerRadius = 10;
     loginVC.loginButtonTextColor = [UIColor blackColor];
+    loginVC.showAutoLogin = YES;
+    loginVC.showRememberPsw = YES;
     loginVC.loginHandler = ^BOOL(NSString *userName, NSString *password){
         
         return YES;

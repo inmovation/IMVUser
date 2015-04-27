@@ -32,10 +32,15 @@
     @property (weak, nonatomic) IBOutlet UIImageView *passwordImageView;
     @property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
     @property (weak, nonatomic) IBOutlet UIButton *autoLoginButton;
+    @property (weak, nonatomic) IBOutlet UILabel *autoLoginLabel;
     @property (weak, nonatomic) IBOutlet UIButton *loginButton;
+    @property (weak, nonatomic) IBOutlet UIButton *savePassButton;
+    @property (weak, nonatomic) IBOutlet UILabel *savePassLabel;
 
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *titleLabelTopConstraint;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *bodyViewTopConstraint;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *rememberPswMarginConstraint;//保存密码按钮和文字间的间隔
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *loginButtonTopConstraint;
 
 @end
 
@@ -56,6 +61,9 @@
     [_autoLoginButton setBackgroundImage:[UIImage imageForName:IMVUserAutoLoginUncheck] forState:UIControlStateNormal];
     [_autoLoginButton setBackgroundImage:[UIImage imageForName:IMVUserAutoLoginChecked] forState:UIControlStateSelected];
     
+    [_savePassButton setBackgroundImage:[UIImage imageForName:IMVUserAutoLoginUncheck] forState:UIControlStateNormal];
+    [_savePassButton setBackgroundImage:[UIImage imageForName:IMVUserAutoLoginChecked] forState:UIControlStateSelected];
+
     NSString *bgImageName = [IMVUserBackgroundImage stringByAppendingString:[NSString stringWithFormat:@"%ld", (long)[UIScreen mainScreen].bounds.size.height]];
     [_loginButton setBackgroundImage:[UIImage imageForName:IMVUserLoginBtnBackgroundNormal] forState:UIControlStateNormal];
     [_loginButton setBackgroundImage:[UIImage imageForName:IMVUserLoginBtnBackgroundHighlighted] forState:UIControlStateHighlighted];
@@ -87,11 +95,37 @@
 
     [self addKeyboardObserver];
     
-}
 
+    _autoLoginButton.hidden = !_showAutoLogin;
+    _autoLoginLabel.hidden = !_showAutoLogin;
+    _savePassButton.hidden = !_showRememberPsw;
+    _savePassLabel.hidden = !_showRememberPsw;
+    if (!_showAutoLogin && !_showRememberPsw) {
+        _loginButtonTopConstraint.constant = 20;
+    }else{
+        _loginButtonTopConstraint.constant = 60;
+    }
+    
+    _savePassButton.selected = [IMVUserManager sharedInstence].rememberPsw;
+    _autoLoginButton.selected = [IMVUserManager sharedInstence].autoLogin;
+    
+    if (_autoLoginButton.selected) {
+        [self loginButtonClicked:nil];
+    }
+    
+    
+    
+}
 
 -(void)addKeyboardObserver{
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardHeightWillChange:) name:UIKeyboardWillChangeFrameNotification object:nil];
+}
+
+
+
+- (NSLayoutConstraint *)gapConstraint{
+    _rememberPswMarginConstraint.constant = _gapConstraint.constant;
+    return _gapConstraint;
 }
 
 - (void)keyboardHeightWillChange:(NSNotification *)notification{
@@ -138,6 +172,16 @@
 
 - (IBAction)autoLoginBtnClicked:(id)sender {
     _autoLoginButton.selected = !_autoLoginButton.selected;
+    [IMVUserManager sharedInstence].autoLogin = _autoLoginButton.selected;
+    if (_autoLoginButton.selected) {
+        _savePassButton.selected = YES;
+        [IMVUserManager sharedInstence].rememberPsw = _savePassButton.selected;
+    }
+}
+
+- (IBAction)savePassBtnClicked:(id)sender {
+    _savePassButton.selected = !_savePassButton.selected;
+    [IMVUserManager sharedInstence].rememberPsw = _savePassButton.selected;
 }
 
 - (IBAction)loginButtonClicked:(id)sender {
@@ -150,6 +194,7 @@
         return;
     }
     self.loginHandler(_userTextField.text, _passwordTextField.text);
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -168,7 +213,7 @@
 
 - (IBAction)slide2:(id)sender {
     UISlider *slide = sender;
-    _gapConstraint.constant = slide.value;
+    self.gapConstraint.constant = slide.value;
 }
 
 - (IBAction)slide3:(id)sender {
