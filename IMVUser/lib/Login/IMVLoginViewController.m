@@ -159,10 +159,6 @@
         _titleLabel.alpha = alpha;
         [self.view layoutIfNeeded];
     } completion:nil];
-//    [UIView animateWithDuration:animationDuration animations:^{
-//        _titleLabel.alpha = alpha;
-//        [self.view layoutIfNeeded];
-//    } completion:nil];
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{

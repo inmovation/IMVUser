@@ -14,9 +14,9 @@
 		36338BF91AEDC55B00751A61 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36338BF81AEDC55B00751A61 /* Images.xcassets */; };
 		36338BFC1AEDC55B00751A61 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36338BFA1AEDC55B00751A61 /* LaunchScreen.xib */; };
 		36338C081AEDC55B00751A61 /* IMVUserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 36338C071AEDC55B00751A61 /* IMVUserTests.m */; };
-		36338C141AEDCD9500751A61 /* IMVLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36338C121AEDCD9500751A61 /* IMVLoginViewController.m */; };
-		36338C151AEDCD9500751A61 /* IMVLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36338C131AEDCD9500751A61 /* IMVLoginViewController.xib */; };
 		36338C221AEDF19A00751A61 /* ThemeDefault.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 36338C211AEDF19A00751A61 /* ThemeDefault.bundle */; };
+		36D3103C1AF75C5300FBC7E7 /* IMVLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36D3103A1AF75C5300FBC7E7 /* IMVLoginViewController.m */; };
+		36D3103D1AF75C5300FBC7E7 /* IMVLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36D3103B1AF75C5300FBC7E7 /* IMVLoginViewController.xib */; };
 		893A354BBB423A2EBCAE58CE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BFCC55A519FEB1810A2FBDA /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -44,10 +44,10 @@
 		36338C011AEDC55B00751A61 /* IMVUserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IMVUserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		36338C061AEDC55B00751A61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36338C071AEDC55B00751A61 /* IMVUserTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IMVUserTests.m; sourceTree = "<group>"; };
-		36338C111AEDCD9500751A61 /* IMVLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMVLoginViewController.h; sourceTree = "<group>"; };
-		36338C121AEDCD9500751A61 /* IMVLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMVLoginViewController.m; sourceTree = "<group>"; };
-		36338C131AEDCD9500751A61 /* IMVLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IMVLoginViewController.xib; sourceTree = "<group>"; };
 		36338C211AEDF19A00751A61 /* ThemeDefault.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ThemeDefault.bundle; sourceTree = "<group>"; };
+		36D310391AF75C5300FBC7E7 /* IMVLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMVLoginViewController.h; sourceTree = "<group>"; };
+		36D3103A1AF75C5300FBC7E7 /* IMVLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMVLoginViewController.m; sourceTree = "<group>"; };
+		36D3103B1AF75C5300FBC7E7 /* IMVLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IMVLoginViewController.xib; sourceTree = "<group>"; };
 		54B44F8A1D7CA3A89E45A1BC /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		8BFCC55A519FEB1810A2FBDA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		939A03D110B1749ACA51EB3B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -108,10 +108,8 @@
 				36338BF01AEDC55B00751A61 /* AppDelegate.m */,
 				36338BF21AEDC55B00751A61 /* ViewController.h */,
 				36338BF31AEDC55B00751A61 /* ViewController.m */,
-				36338C111AEDCD9500751A61 /* IMVLoginViewController.h */,
-				36338C121AEDCD9500751A61 /* IMVLoginViewController.m */,
-				36338C131AEDCD9500751A61 /* IMVLoginViewController.xib */,
 				36338BF51AEDC55B00751A61 /* Main.storyboard */,
+				36D310321AF75C2D00FBC7E7 /* lib */,
 				36338C211AEDF19A00751A61 /* ThemeDefault.bundle */,
 				36338BF81AEDC55B00751A61 /* Images.xcassets */,
 				36338BFA1AEDC55B00751A61 /* LaunchScreen.xib */,
@@ -144,6 +142,24 @@
 				36338C061AEDC55B00751A61 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		36D310321AF75C2D00FBC7E7 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				36D310381AF75C5300FBC7E7 /* Login */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		36D310381AF75C5300FBC7E7 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				36D310391AF75C5300FBC7E7 /* IMVLoginViewController.h */,
+				36D3103A1AF75C5300FBC7E7 /* IMVLoginViewController.m */,
+				36D3103B1AF75C5300FBC7E7 /* IMVLoginViewController.xib */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		DD18E2BB55851B942B28B164 /* Frameworks */ = {
@@ -239,8 +255,8 @@
 				36338BF71AEDC55B00751A61 /* Main.storyboard in Resources */,
 				36338BFC1AEDC55B00751A61 /* LaunchScreen.xib in Resources */,
 				36338BF91AEDC55B00751A61 /* Images.xcassets in Resources */,
+				36D3103D1AF75C5300FBC7E7 /* IMVLoginViewController.xib in Resources */,
 				36338C221AEDF19A00751A61 /* ThemeDefault.bundle in Resources */,
-				36338C151AEDCD9500751A61 /* IMVLoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,7 +310,7 @@
 				36338BF41AEDC55B00751A61 /* ViewController.m in Sources */,
 				36338BF11AEDC55B00751A61 /* AppDelegate.m in Sources */,
 				36338BEE1AEDC55B00751A61 /* main.m in Sources */,
-				36338C141AEDCD9500751A61 /* IMVLoginViewController.m in Sources */,
+				36D3103C1AF75C5300FBC7E7 /* IMVLoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
